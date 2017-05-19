@@ -5,7 +5,7 @@
 package com.javalab.bruce;
 
 public class App1 {
-
+    //定义一个静态String变量 将String包装类型的值赋值给常量final；
     private static final String GREETING = new String("greeting");
 
     /**
@@ -23,6 +23,7 @@ public class App1 {
          * System.out 和 System.err 都是PrintStream类型的，可以在控制台输出信息。
          * System.out 中的 out 代表了 System 类中的静态对象 PrintStream: public static
          * println 是 PrintStream 中的方法
+         *
          */
         System.out.println(greeting);
 
@@ -35,8 +36,13 @@ public class App1 {
 
         System.out.println("");//在控制台输出一个空行.
 
-        return greeting;//返回参数的值
+        return new String(greeting);//返回参数的值
     }
+    /*
+    * 定义一个类方法
+    * @param greeting String类型
+    * @return boolean类型，返回比较参数 greeting == GREETING 的值
+    * */
 
     public boolean ifValidate(String greeting) {
 
@@ -55,6 +61,7 @@ public class App1 {
      */
     public static void main(String[] args) {
         App1.greet("huxiaokang");
+
     }
 
 }
