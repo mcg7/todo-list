@@ -39,7 +39,8 @@ public class App1Test {
      * 也就是说,equals方法返回的boolean是true的话,assertTrue()通过,否则抛出Exception,表示测试不通过。
      *
      * equals方法用于比较两个String是否相等,注意不能用 == 比较两个字符串对象的值是否相等。为什么?
-     * equals的意义是什么?
+     * == 比较的是两者所引用的地址是否相同，equals对于字符串来说比较的是包含的内容是否相同
+     * equals的意义是什么? 是object下的方法，指示两个引用的变量是否指向同一对象
      */
     assertTrue(FIRST_APP.equals(App1.greet(FIRST_APP)));
 
