@@ -6,7 +6,7 @@ package com.javalab.bruce;
 
 public class App1 {
     //定义一个静态String变量 将String包装类型的值赋值给常量final；
-    private static final String GREETING = new String("greeting");
+    private static final String GREETING = "greeting";
 
     /**
      * 定义一个static方法，那就是说，无需实例化本类(new一个App1对象)即可调用此方法.
@@ -61,7 +61,6 @@ public class App1 {
      */
     public static void main(String[] args) {
         App1.greet("huxiaokang");
-
     }
 
 }

@@ -13,7 +13,7 @@ package com.javalab.bruce;
  * JUnit 是一个框架，用于编写可复用测试集。
  * App1Test 类要使用 org.junit.Test 类提供的功能，实现单元测试功能。
  * org.junit.Test 类属于 junit-4.11.jar。这个 jar 包含了 JUnit 框架的所有类。
- * 项目的 pom.xml 里声明对 junit-4.11.jar 的依赖。
+ * 项目的 pom.xml 里声明 对 junit-4.11.jar 的依赖。
  * 编译器在 classpath 里可以找到 junit-4.11.jar。
  * 在运行程序测试程序的时候，JVM 可以加载到 junit-4.11.jar。
  */
